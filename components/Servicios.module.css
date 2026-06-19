@@ -100,6 +100,24 @@
   text-align: center;
 }
 
+.imagenPhoto {
+  padding: 0;
+  overflow: hidden;
+}
+
+.servicePhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.servicePhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .servicio:nth-child(even) .imagen {
   border-left: none;
   border-right: var(--rule-slab) solid var(--color-rule);

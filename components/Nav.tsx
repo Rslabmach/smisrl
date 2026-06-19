@@ -17,20 +17,26 @@ export default function Nav() {
     <>
       <header className={s.nav} role="banner">
         <a className={s.mark} href="/">
-          SMI<span>.</span>
+          <img
+            src="/logo/LOGO SMI.png"
+            alt="SMI Logo"
+            width="100"
+            height="100"
+            style={{ width: 'auto', height: '40px', background: 'transparent' }}
+          />
         </a>
 
         <nav className={s.links} aria-label="Principal">
-          {links.map((l) => (
-            <a key={l.href} href={l.href}>
+          {links.map((l, i) => (
+            <a
+              key={l.href}
+              href={l.href}
+              className={i === links.length - 1 ? s.cta : ""}
+            >
               {l.label}
             </a>
           ))}
         </nav>
-
-        <a className={s.cta} href="#contacto">
-          Contacto
-        </a>
 
         <button
           className={s.hamburger}

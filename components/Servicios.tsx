@@ -16,8 +16,41 @@ export default function Servicios() {
             <h3 className={s.titulo}>{srv.titulo}</h3>
             <p className={s.descripcion}>{srv.descripcion}</p>
           </div>
-          <div className={s.imagen} aria-hidden="true">
-            Foto {srv.titulo}
+          <div
+            className={`${s.imagen} ${
+              srv.id === "gestion" || srv.id === "supervision" || srv.id === "mantenimiento" || srv.id === "estructuras"
+                ? s.imagenPhoto
+                : ""
+            }`}
+            aria-hidden="true"
+          >
+            {srv.id === "gestion" ? (
+              <img
+                src="/images/GESTION2.jpg"
+                alt={`Foto ${srv.titulo}`}
+                className={s.servicePhoto}
+              />
+            ) : srv.id === "supervision" ? (
+              <img
+                src="/images/SEGUIMIENTO.jpg"
+                alt={`Foto ${srv.titulo}`}
+                className={s.servicePhoto}
+              />
+            ) : srv.id === "mantenimiento" ? (
+              <img
+                src="/images/MANTENIMIENTO.jpg"
+                alt={`Foto ${srv.titulo}`}
+                className={s.servicePhoto}
+              />
+            ) : srv.id === "estructuras" ? (
+              <img
+                src="/images/ESTRUCTURA.jpg"
+                alt={`Foto ${srv.titulo}`}
+                className={s.servicePhoto}
+              />
+            ) : (
+              `Foto ${srv.titulo}`
+            )}
           </div>
         </article>
       ))}

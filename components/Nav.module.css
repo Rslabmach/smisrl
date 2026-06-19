@@ -14,13 +14,14 @@
 }
 
 .mark {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: var(--text-lg);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--color-ink);
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
+  background: transparent;
+}
+
+.mark img {
+  background: transparent !important;
 }
 
 .mark span {
@@ -52,14 +53,14 @@
   display: inline-flex;
   align-items: center;
   padding: var(--space-xs) var(--space-md);
-  background: var(--color-ink);
-  color: var(--color-paper);
+  background: var(--color-accent);
+  color: var(--color-ink);
   font-family: var(--font-body);
   font-weight: 600;
   font-size: var(--text-sm);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  border: var(--rule-slab) solid var(--color-rule);
+  border: var(--rule-slab) solid var(--color-accent);
   transition:
     background var(--dur-fast) var(--ease-out),
     color var(--dur-fast) var(--ease-out);

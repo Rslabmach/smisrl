@@ -15,7 +15,7 @@ export default function QuienesSomos() {
         <div data-reveal>
           <div className={s.body}>
             <p>
-              Somos una empresa dedicada a brindar soluciones a la industria,
+              Somos unesa dedia emprcada a brindar soluciones a la industria,
               mediante servicios de mantenimiento, ingeniería y montajes
               mecánicos.
             </p>
@@ -31,8 +31,12 @@ export default function QuienesSomos() {
             </p>
           </div>
 
-          <div className={s.imgPlaceholder} aria-hidden="true">
-            Foto del equipo
+          <div className={s.imgWrapper}>
+            <img
+              src="/images/GESTION.jpg"
+              alt="Foto del equipo"
+              className={s.teamPhoto}
+            />
           </div>
         </div>
       </div>
