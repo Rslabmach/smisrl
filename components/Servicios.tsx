@@ -49,7 +49,7 @@ export default function Servicios() {
                 className={s.servicePhoto}
               />
             ) : (
-              `Foto ${srv.titulo}`
+              <span>{'Foto ' + (srv as any).titulo}</span>
             )}
           </div>
         </article>
