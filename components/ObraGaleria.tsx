@@ -16,23 +16,26 @@ export default function ObraGaleria({ slug, fotos, titulo }: Props) {
   return (
     <>
       <ul className={s.galeria}>
-        {fotos.map((foto, i) => (
-          <li key={foto}>
-            <button
-              className={s.item}
-              onClick={() => setActive(foto)}
-              aria-label={`Ver foto ${i + 1} de ${titulo}`}
-            >
-              <Image
-                src={`/images/obras/${slug}/${foto}`}
-                alt={`${titulo} — foto ${i + 1}`}
-                fill
-                sizes="(max-width: 414px) 100vw, 50vw"
-                style={{ objectFit: "cover" }}
-              />
-            </button>
-          </li>
-        ))}
+        {fotos.map((foto, i) => {
+          const isContain = foto === "ING 2.png" || foto === "ING 3.png";
+          return (
+            <li key={foto}>
+              <button
+                className={s.item}
+                onClick={() => setActive(foto)}
+                aria-label={`Ver foto ${i + 1} de ${titulo}`}
+              >
+                <Image
+                  src={`/images/obras/${slug}/${foto}`}
+                  alt={`${titulo} — foto ${i + 1}`}
+                  fill
+                  sizes="(max-width: 414px) 100vw, 50vw"
+                  style={{ objectFit: isContain ? "contain" : "cover" }}
+                />
+              </button>
+            </li>
+          );
+        })}
       </ul>
 
       {active && (

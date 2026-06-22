@@ -15,7 +15,7 @@ export default function QuienesSomos() {
         <div data-reveal>
           <div className={s.body}>
             <p>
-              Somos unesa dedia emprcada a brindar soluciones a la industria,
+              Somos una empresa dedicada a brindar soluciones a la industria,
               mediante servicios de mantenimiento, ingeniería y montajes
               mecánicos.
             </p>

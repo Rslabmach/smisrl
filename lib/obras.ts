@@ -18,7 +18,7 @@ export const obras: Obra[] = [
     titulo: "Montaje Estructura Metálica — Casa Elevada",
     descripcion:
       "Montaje de estructura metálica para vivienda elevada. Coordinación de logística de transporte y montaje en altura.",
-    fotos: ["CASA.jpg", "CASA 2.jpg", "03.svg"],
+    fotos: ["CASA.jpg", "CASA 2.jpg", "CASA 3.jpg"],
   },
   {
     slug: "tolva-balanza-envasadora",
