@@ -1,0 +1,70 @@
+.page {
+  padding-top: 5rem; /* nav offset */
+}
+
+.hero {
+  padding: var(--space-4xl) var(--page-gutter) var(--space-3xl);
+  border-bottom: var(--rule-slab) solid var(--color-rule);
+  background: var(--color-inverse-paper);
+  color: var(--color-inverse-ink);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2xl);
+  transition: gap var(--dur-fast) var(--ease-out);
+}
+
+.back:hover,
+.back:focus-visible {
+  gap: var(--space-md);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--text-display);
+  text-transform: uppercase;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: var(--color-inverse-ink);
+  max-width: 20ch;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.desc {
+  margin-top: var(--space-xl);
+  font-size: var(--text-md);
+  line-height: 1.65;
+  max-width: var(--measure);
+  color: oklch(78% 0.008 70);
+}
+
+.galeriaSection {
+  padding: var(--space-3xl) var(--page-gutter);
+  max-width: var(--page-max);
+  margin: 0 auto;
+}
+
+.galeriaLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+  margin-bottom: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 7rem;
+  }
+}

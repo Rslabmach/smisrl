@@ -1,0 +1,69 @@
+/* Hallmark · genre: editorial · macrostructure: Split Studio · theme: Brutal · enrichment: none · nav: N7 · footer: Ft5 */
+/* Hallmark · pre-emit critique: P5 H4 E4 S5 R4 V4 */
+/* tone: brutalist · anchor hue: safety-orange (~45deg) · paper-band: light · display-style: display-heavy · accent-hue: warm */
+
+:root {
+  /* ── Color (OKLCH; paper/ink tinted warm, never pure black/white) ── */
+  --color-paper:      oklch(97.2% 0.006 70);   /* near-white, faint warm */
+  --color-paper-2:    oklch(94.5% 0.008 70);   /* raised surface */
+  --color-paper-3:    oklch(90.5% 0.010 70);   /* hover / pressed band */
+  --color-ink:        oklch(20% 0.012 70);     /* near-black, warm bias */
+  --color-ink-2:      oklch(38% 0.012 70);     /* secondary text */
+  --color-ink-3:      oklch(55% 0.010 70);     /* muted / captions */
+  --color-accent:     oklch(64% 0.185 45);     /* safety orange */
+  --color-accent-ink: oklch(28% 0.10 45);      /* accent text on paper (AA) */
+  --color-on-accent:  oklch(99% 0.01 70);      /* text on accent fill */
+  --color-rule:       oklch(20% 0.012 70);     /* brutalist borders = ink */
+  --color-rule-soft:  oklch(82% 0.010 70);     /* hairline inside light areas */
+  --color-focus:      oklch(55% 0.20 250);     /* focus ring (cool, ≥3:1) */
+  --color-inverse-paper: oklch(20% 0.012 70);  /* dark band */
+  --color-inverse-ink:   oklch(96% 0.006 70);  /* text on dark band */
+
+  /* ── Type families (loaded via next/font in app/layout.tsx) ── */
+  --font-display: var(--font-big-shoulders), "Arial Narrow", system-ui, sans-serif;
+  --font-body:    var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    var(--font-geist-mono), ui-monospace, monospace;
+
+  /* ── Type scale (1.25 major third; display clamped) ── */
+  --text-xs:   0.8rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-md:   1.25rem;
+  --text-lg:   1.5625rem;
+  --text-xl:   1.9531rem;
+  --text-2xl:  2.4414rem;
+  --text-3xl:  3.0518rem;
+  --text-4xl:  3.8147rem;
+  --text-display:   clamp(3rem, 8vw + 1rem, 6rem);
+  --text-display-s: clamp(2.4rem, 5vw + 1rem, 4rem);
+
+  /* ── Spacing (4pt scale, semantic) ── */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  /* ── Page frame ── */
+  --page-gutter: clamp(1.25rem, 5vw, 4rem);
+  --page-max:    78rem;
+  --measure:     65ch;
+
+  /* ── Rules / borders (brutalist = heavy ink) ── */
+  --rule-hair:  1px;
+  --rule-slab:  2px;
+  --rule-heavy: 4px;
+  --radius:     0px;   /* brutalist: no rounding */
+
+  /* ── Motion ── */
+  --dur-fast: 120ms;
+  --dur-mid:  220ms;
+  --dur-slow: 420ms;
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.5, 0, 0.75, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}

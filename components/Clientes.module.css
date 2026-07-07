@@ -1,0 +1,83 @@
+.section {
+  padding: var(--space-3xl) var(--page-gutter);
+  border-bottom: var(--rule-slab) solid var(--color-rule);
+}
+
+.inner {
+  max-width: var(--page-max);
+  margin: 0 auto;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-3);
+  margin-bottom: var(--space-2xl);
+}
+
+/* T2 logo-wall hairline style */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: var(--rule-hair) solid var(--color-rule-soft);
+  border-left: var(--rule-hair) solid var(--color-rule-soft);
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl) var(--space-lg);
+  border-right: var(--rule-hair) solid var(--color-rule-soft);
+  border-bottom: var(--rule-hair) solid var(--color-rule-soft);
+  min-height: 240px;
+}
+
+.cell img,
+.cell svg {
+  max-width: 360px;
+  max-height: 136px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(1) contrast(0.8);
+  opacity: 0.7;
+  transition:
+    opacity var(--dur-fast) var(--ease-out),
+    filter var(--dur-fast) var(--ease-out);
+}
+
+.cell:hover img,
+.cell:hover svg {
+  opacity: 1;
+  filter: grayscale(1) contrast(1);
+}
+
+/* fallback name if no image */
+.clienteName {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-md);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-ink-3);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 414px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cell {
+    padding: var(--space-lg) var(--space-md);
+  }
+}

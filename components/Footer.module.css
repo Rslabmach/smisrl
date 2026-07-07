@@ -1,0 +1,75 @@
+/* Ft5 · Statement footer */
+.footer {
+  padding: var(--space-3xl) var(--page-gutter) var(--space-2xl);
+  background: var(--color-inverse-paper);
+  color: var(--color-inverse-ink);
+  display: grid;
+  gap: var(--space-2xl);
+  max-width: 100%;
+}
+
+.statement {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1.75rem, 5vw, 3.25rem);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  max-width: 24ch;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.statement em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  padding-block-start: var(--space-lg);
+  border-top: var(--rule-slab) solid oklch(35% 0.012 70);
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--text-lg);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.wordmark span {
+  color: var(--color-accent);
+}
+
+.metaLinks {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.metaLinks a {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: oklch(65% 0.008 70);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.metaLinks a:hover,
+.metaLinks a:focus-visible {
+  color: var(--color-accent);
+}
+
+.copy {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: oklch(50% 0.008 70);
+}

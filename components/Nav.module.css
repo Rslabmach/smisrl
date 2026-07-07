@@ -1,0 +1,150 @@
+/* N7 · Brutal slab */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-sm) var(--page-gutter);
+  background: var(--color-paper);
+  border-bottom: var(--rule-slab) solid var(--color-rule);
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  background: transparent;
+}
+
+.mark img {
+  background: transparent !important;
+}
+
+.mark span {
+  color: var(--color-accent);
+}
+
+.links {
+  display: flex;
+  gap: var(--space-lg);
+  margin-left: auto;
+  align-items: center;
+}
+
+.links a {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-ink-2);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.links a:hover,
+.links a:focus-visible {
+  color: var(--color-ink);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--color-accent);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: var(--rule-slab) solid var(--color-accent);
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+/* ── Mobile menu ── */
+.hamburger {
+  display: none;
+  margin-left: auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-ink);
+  transition: transform var(--dur-mid) var(--ease-in-out);
+}
+
+.drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-inverse-paper);
+  z-index: 99;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--space-4xl) var(--page-gutter) var(--page-gutter);
+  gap: var(--space-md);
+}
+
+.drawer.open {
+  display: flex;
+}
+
+.drawer a {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2rem, 10vw, 3.5rem);
+  text-transform: uppercase;
+  color: var(--color-inverse-ink);
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.drawer a:hover {
+  color: var(--color-accent);
+}
+
+.closeBtn {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--page-gutter);
+  font-size: var(--text-2xl);
+  color: var(--color-inverse-ink);
+  line-height: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
