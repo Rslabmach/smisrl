@@ -31,7 +31,10 @@ export const metadata: Metadata = {
   },
   description:
     "SMI brinda soluciones a la industria mediante mantenimiento, ingeniería y montajes mecánicos, con gestión y profesionalismo de empresas de primera línea.",
-  keywords: [
+ icons: {
+    icon: '/logo/LOGO SMI 3.png', 
+  },
+ keywords: [
     "mantenimiento industrial",
     "ingeniería",
     "montajes mecánicos",
