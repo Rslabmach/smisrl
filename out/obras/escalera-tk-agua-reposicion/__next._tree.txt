@@ -1,7 +1,7 @@
-:HL["/_next/static/chunks/09-len_vihq9v.css","style"]
-:HL["/_next/static/media/55cb69ad17a100ed.p.2l41_ldkjomdb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/chunks/0_p5xaqe75h4-.css","style"]
+:HL["./_next/static/chunks/09-len_vihq9v.css","style"]
+:HL["./_next/static/media/55cb69ad17a100ed.p.2l41_ldkjomdb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["./_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["./_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["./_next/static/chunks/0_p5xaqe75h4-.css","style"]
 :HL["/logo/LOGO SMI 3.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"obras","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"escalera-tk-agua-reposicion","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"5ZUv6fehaFfOV4R55uHRo"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"obras","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"escalera-tk-agua-reposicion","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"H1UP09bGtFZ6XVfGkESS1"}
